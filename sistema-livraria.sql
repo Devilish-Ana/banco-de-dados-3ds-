@@ -43,3 +43,10 @@ VALUES
 (3, '1984'),
 (1, 'A Moreninha'),
 (2, 'Harry Potter e a Pedra Filosofal');
+
+SELECT 
+    c.nomeCliente AS NomeCliente,
+    co.NomeLivro AS NomeLivro
+FROM Compras co
+INNER JOIN Clientes c
+    ON co.ClienteID = c.ID;
